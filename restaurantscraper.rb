@@ -82,7 +82,7 @@ class RestaurantScraper
       puts "Cost_For_Two: #{res_cost_for_two}"
       res_image_url = li_tag.at_css("a")["data-original"]
       puts "Image_url: #{res_image_url}"
-      #agent1.get(res_image_url).save
+      agent1.get(res_image_url).save
       puts "\n"
 
 
